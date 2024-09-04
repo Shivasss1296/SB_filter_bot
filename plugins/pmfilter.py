@@ -1382,7 +1382,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/JisshuMovieZone")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/SB_filez_bot")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1407,7 +1407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/JisshuMovieZone")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/SB_filez_bot")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1471,8 +1471,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("ꜰᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
                InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ", url=online)
                ], [
-               InlineKeyboardButton('🖥️ Watch On Telegram 🧿', web_app=WebAppInfo(url=online))
-               ], [
                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
                ]]
        elif not JS_WEB_PREMIUM:
@@ -1480,8 +1478,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
            btn = [[
                InlineKeyboardButton("ꜰᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
                InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ", url=online)
-               ], [
-               InlineKeyboardButton('🖥️ Watch On Telegram 🧿', web_app=WebAppInfo(url=online))
                ], [
                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
               ]]
@@ -1532,13 +1528,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('⚠️ Help ', callback_data='help'),
                     InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Premium 🔓', callback_data="seeplans"),
-                    InlineKeyboardButton('Refer ⚜️', callback_data="reffff")
-                ],[
-                    InlineKeyboardButton('🔍 Most Search', callback_data="mostsearch"),
-                    InlineKeyboardButton('⚡ Top Trending', callback_data="trending")
-                ]]
+                ],]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -1784,15 +1774,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #jisshu
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/MAP_Originals_Backup')
+            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/SB_filez')
         ],[
             InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/+ZjmlLeuGGak5Yjhl'),
             InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/+ZjmlLeuGGak5Yjhl')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/JISSHU_BOTS')
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/SB_filez')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Jisshu_support')
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/SB_filez')
         ]]
         reply_markup = InlinekeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1854,12 +1844,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
-        ], [
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
-        ], [
-            InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')
-        ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2080,7 +2064,7 @@ async def auto_filter(client, msg, spoll=False):
                 await m.delete()
                 if settings["spell_check"]:
                   #  st=await message.reply_sticker(sticker="CAACAgQAAxkBAAEq2R9mipkiW9ACyj7oQXznwKTPHqNCXQACkBUAA3mRUZGx4GwLX9XCHgQ")
-                    ai_sts = await message.reply_text('ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
+                    ai_sts = await message.reply_text('Ai is ᴄʜᴇᴄᴋɪɴɢ FOR ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ Please Wait...')
                     is_misspelled = await ai_spell_check(chat_id = message.chat.id,wrong_name=search)
                     if is_misspelled:
                     #    await ai_sts.edit(f'<b>Ai Suggested <code>{is_misspelled}</code>\nSo Im Searching for <code>{is_misspelled}</code></b>')
