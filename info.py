@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://graph.org/file/6b5d067ca32eeb6dfa406.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/69c7020bed956a3a0cade.jpg https://telegra.ph/file/4c1183439fc856fb30d73.jpg https://telegra.ph/file/4651d06e5b9c2e41e275a.jpg https://telegra.ph/file/727c1cb51563c114a48c4.jpg https://telegra.ph/file/4962d54657ead4cbcc912.jpg https://telegra.ph/file/52248213430314b93f484.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/70c306053d29595749a52.mp4")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
@@ -75,7 +75,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: jisshu bot')
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: SB_filez_bot')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
