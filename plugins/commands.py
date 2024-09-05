@@ -27,7 +27,6 @@ TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 
-
 movie_series_db = Jisshu_TOP(DATABASE_URI)
 
 
