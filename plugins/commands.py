@@ -149,11 +149,11 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⚠️ Help ', callback_data='help'),
-                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Updates channel 📣', url=f'https://t.me/SB_filez'),
-                    InlineKeyboardButton('Movies Group ⚜️', url=f'https://t.me/+GEIPhP18NVtmZjJl')
+                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/SB_filez'),
+                    InlineKeyboardButton('• ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ •', url=f'https://t.me/+GEIPhP18NVtmZjJl')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -200,11 +200,11 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                  ],[
-                    InlineKeyboardButton('⚠️ Help ', callback_data='help'),
-                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Updates channel 📣', url=f'https://t.me/SB_filez'),
-                    InlineKeyboardButton('Movies Group ⚜️', url=f'https://t.me/+GEIPhP18NVtmZjJl')
+                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/SB_filez'),
+                    InlineKeyboardButton(''• ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ •', url=f'https://t.me/+GEIPhP18NVtmZjJl')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
