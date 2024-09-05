@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
-EMOJIS = [ "👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡" ]
+EMOJIS = [  "😍", "🥰" ]
 
 
 movie_series_db = Jisshu_TOP(DATABASE_URI)
