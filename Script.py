@@ -7,7 +7,7 @@ class script(object):
     
 ᴡᴇ ʜᴀᴠᴇ ᴅᴇᴠɪᴅᴇᴅ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀꜱ ᴀɴᴅ ʙᴏᴛ ᴜꜱᴇʀꜱ.</b>"""
 
-    ABOUT_TXT = """<blockquote><b>‣ 🤖 ɪ'ᴍ  : 𝙎𝘽 𝙁𝙄𝙇𝙀𝙕 𝘽𝙊𝙏\n‣ 🙏🏻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/SB_filez'>sʙ ғɪʟᴇᴢ </a>\n‣ 😚 ᴍʏ ᴛʀᴜsᴛʏ sᴛᴇᴇᴅ : ᴘʏʀᴏɢʀᴀᴍ\n‣ 🐍 ᴄᴏᴅɪɴɢ ᴍᴜsᴄʟᴇs : ᴘʏᴛʜᴏɴ\n‣ 🍿 ʙʀᴀɪɴ ғᴜᴇʟᴇᴅ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ  : 𝙆𝙊𝙔𝘼𝘽\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ5.2 [sᴛᴀʙʟᴇ]</b></blockquote>"""
+    ABOUT_TXT = """<blockquote><b>‣ 🤖 ɪ'ᴍ  : 𝙎𝘽 𝙁𝙄𝙇𝙀𝙕 𝘽𝙊𝙏\n‣ 🙏🏻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/SB_filez'>sʙ ғɪʟᴇᴢ </a>\n‣ 😚 ᴍʏ ᴛʀᴜsᴛʏ sᴛᴇᴇᴅ : ᴘʏʀᴏɢʀᴀᴍ\n‣ 🐍 ᴄᴏᴅɪɴɢ ᴍᴜsᴄʟᴇs : ᴘʏᴛʜᴏɴ\n‣ 🍿 ʙʀᴀɪɴ ғᴜᴇʟᴇᴅ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ  : 𝙺𝙾𝚈𝙰𝙱\n‣ 💻 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ5.2 [sᴛᴀʙʟᴇ]</b></blockquote>"""
     
     CHANNELS = """
 <b>⚡ ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ⚡ 
@@ -242,7 +242,7 @@ developer : Mr.Jisshu
 </b>""" 
 
     
-    CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇 ➥ 「<a href="https://t.me/SB_filez">𝙎𝘽 𝙁𝙄𝙇𝙀𝙕 </a>」</b>"""
+    CAPTION = """<b>{file_caption}\n\n𝖩𝗈𝗂𝗇 ➥ 「<a href="https://t.me/SB_filez">𝙎𝘽 𝙁𝙄𝙇𝙀𝙕 </a>」</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
