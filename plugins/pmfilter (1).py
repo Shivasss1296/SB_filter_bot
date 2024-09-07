@@ -1830,8 +1830,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
         ], [
-            InlineKeyboardButton('• ᴅɪsᴄʟᴀɪᴍᴇʀ  •', callback_data='users'),
-            InlineKeyboardButton('• ɴᴏᴛᴇ •', callback_data='group')
+            InlineKeyboardButton('• ᴅɪsᴄʟᴀɪᴍᴇʀ  •', url='https://t.me/+ZUiK6MjBizRiNmQ1'),
+            InlineKeyboardButton('• ɴᴏᴛᴇ •', url='https://t.me/+ZUiK6MjBizRiNmQ1')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
