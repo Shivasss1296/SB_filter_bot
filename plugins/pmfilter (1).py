@@ -2044,7 +2044,6 @@ async def auto_filter(client, msg, spoll=False):
         if len(message.text) < 100:
             search = message.text         
             search = search.lower()
-            m=await message.reply_text(f'**🔎 sᴇᴀʀᴄʜɪɴɢ** `{search}`')
             find = search.split(" ")
             search = ""
             removes = ["in","upload", "series", "full", "horror", "thriller", "mystery", "print", "file"]
@@ -2060,27 +2059,14 @@ async def auto_filter(client, msg, spoll=False):
             files, offset, total_results = await get_search_results(message.chat.id ,search, offset=0, filter=True)
             settings = await get_settings(message.chat.id)
             if not files:
-                await m.delete()
                 if settings["spell_check"]:
-                  #  st=await message.reply_sticker(sticker="CAACAgQAAxkBAAEq2R9mipkiW9ACyj7oQXznwKTPHqNCXQACkBUAA3mRUZGx4GwLX9XCHgQ")
-                    ai_sts = await message.reply_text('𝘼𝙞 𝙄𝙨 𝘾𝙝𝙚𝙘𝙠𝙞𝙣𝙜 𝙔𝙤𝙪𝙧 𝙎𝙥𝙚𝙡𝙡𝙞𝙣𝙜 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩...')
-                    is_misspelled = await ai_spell_check(chat_id = message.chat.id,wrong_name=search)
-                    if is_misspelled:
-                    #    await ai_sts.edit(f'<b>Ai Suggested <code>{is_misspelled}</code>\nSo Im Searching for <code>{is_misspelled}</code></b>')
-                        await asyncio.sleep(2)
-                        message.text = is_misspelled
-                   #     await st.delete()
-                        await ai_sts.delete()
-                        return await auto_filter(client, message)
-              #      await st.delete()
-                    await ai_sts.delete()
-                    return await advantage_spell_chok(client, message)
+                    return await auto_filter(client, message)
+                return await advantage_spell_chok(client, message)
         else:
             return
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_text(f'**🔎 sᴇᴀʀᴄʜɪɴɢ** `{search}`')
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -2188,7 +2174,6 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(300)
@@ -2203,7 +2188,6 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg") 
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                if settings['auto_delete']:
                     await asyncio.sleep(300)
@@ -2219,7 +2203,6 @@ async def auto_filter(client, msg, spoll=False):
             logger.exception(e)
             m=await message.reply_text("🔎") 
             fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(300)
@@ -2232,7 +2215,6 @@ async def auto_filter(client, msg, spoll=False):
                 await message.delete()
     else:
         fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
-        await m.delete()
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(300)
@@ -2243,24 +2225,6 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(300)
             await fuk.delete()
             await message.delete()
-
-async def ai_spell_check(chat_id, wrong_name):
-    async def search_movie(wrong_name):
-        search_results = imdb.search_movie(wrong_name)
-        movie_list = [movie['title'] for movie in search_results]
-        return movie_list
-    movie_list = await search_movie(wrong_name)
-    if not movie_list:
-        return
-    for _ in range(5):
-        closest_match = process.extractOne(wrong_name, movie_list)
-        if not closest_match or closest_match[1] <= 80:
-            return 
-        movie = closest_match[0]
-        files, offset, total_results = await get_search_results(chat_id=chat_id, query=movie)
-        if files:
-            return movie
-        movie_list.remove(movie)
 
 async def advantage_spell_chok(client, message):
     mv_id = message.id
